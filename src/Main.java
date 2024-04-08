@@ -1,7 +1,22 @@
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
+import java.io.BufferedWriter;
+import java.io.FileWriter;
+import java.io.IOException;
+
 public class Main {
-    public static void main(String[] args) {
+
+
+    public static void main(String[] args)  throws  IOException{
+        write();
 
     }
+
+
+    public  static  void write() throws IOException {
+        BufferedWriter w = new BufferedWriter(new FileWriter("text.txt"));
+        w.write("test");
+        w.close();
+
+    }
+
+
 }
